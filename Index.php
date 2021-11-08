@@ -10,15 +10,15 @@
 
 <body>
     <header>
-
+        <?php include 'PHP/header.php'; ?>
     </header>
-    
+
     <main>
 
     </main>
 
     <footer>
-
+        <?php include 'PHP/footer.php'; ?>
     </footer>
 </body>
 
