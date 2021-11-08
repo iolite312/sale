@@ -123,6 +123,7 @@ body::after {
 
 main {
     margin-top: 100px;
+    min-height: 250px;
 }
 
 
