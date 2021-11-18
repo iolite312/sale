@@ -16,11 +16,18 @@
     height: 8vw;
 }
 .leaderboard{
-    color:white;
-    text-align: right;
+    color: white;
+    position: relative;
+    left: 75%;
 }
-a {
+.text{
     text-decoration: none;
+    color: white;
+}
+.center1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 /* footer css */
 .footerbg{
