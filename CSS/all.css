@@ -12,8 +12,8 @@
 }
 /* header css */
 .logo {
-    width: 10vw;
-    height: 8vw;
+    aspect-ratio: calc(32/15);
+    max-width: 10vw;
 }
 .leaderboard {
     color: white;
