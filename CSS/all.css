@@ -1,3 +1,5 @@
+/* Global Values */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,8 @@
     font-family: IBM;
     src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
 }
-/* header css */
+/* Header CSS */
+
 .logo {
     aspect-ratio: calc(32/15);
     max-width: 10vw;
@@ -31,7 +34,51 @@
     flex-direction: row;
     align-items: flex-start;
 }
-/* footer css */
+
+/* Main CSS */
+
+.center {
+    position: relative;
+    left: 15vw;
+    top: 100px;
+    background-color: black;
+    aspect-ratio: calc(16/9);
+    max-width: 70vw;
+}
+.placeholder {
+    color: white;
+    font-family: Glacial;
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    top: 1vw;
+}
+body {
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.588);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: darkcyan;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: darkcyan;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.font {
+    font-family: Glacial;
+}
+
+/* Footer CSS */
+
 .footerbg{
     background-color: seagreen;
     width: 100%;
@@ -49,43 +96,16 @@
     font-family: IBM;
     text-align: center;
 }
-/* main css */
-.center {
-    position: relative;
-    left: 15vw;
-    top: 100px;
-    background-color: black;
-    height: 45vw;
-    width: 70vw;
-}
-.placeholder {
-    color: white;
-    font-family: Glacial;
-    font-size: 5vw;
-    text-align: center;
-    position: relative;
-    top: 1vw;
-}
-.background {
-    background-color: darkslategray;
-}
 
-::-webkit-scrollbar {
-    width: 0rem;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #00000096;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: darkcyan;
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: darkcyan;
-}
-::-webkit-scrollbar-track{
-    background-color: transparent;
-}
+/* Color Templates */
 
-.font {
-    font-family: Glacial;
+:root {
+    --background: rgb(51,51,51);
+    --green-light: rgb(35,178,10);
+    --green-dark: rgb(36,103,33);
+    --light-gray: rgb(160,160,160);
+    --normal-gray: rgb(94,94,94);
+    --placeholder-black: rgb(0,0,0);
+    --text-color: rgb(255,255,255);
+    --text-color-contrast: rgb(0,0,0);
 }

@@ -7,9 +7,9 @@
     <meta name="description" content="placeholder">
     <link rel="stylesheet" href="CSS/All.css">
     <link rel="icon" href="./img/placeholderimg.jpg" type="image/png" sizes="32x32">
-    <title>Sale</title>
+    <title>Goblin Tower Defence</title>
 </head>
-<body class="background">
+<body>
     <header>
         <?php include 'PHP/header.php'; ?>
     </header>
