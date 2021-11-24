@@ -35,6 +35,13 @@
     align-items: flex-start;
 }
 
+.center-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vw 30vw 3vw 30vw;
+}
+
 /* Main CSS */
 
 .center {
@@ -77,19 +84,37 @@ body {
     font-family: Glacial;
 }
 
+/* Leaderboards Page CSS */
+
+select {
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 5px;
+    width: 10vw;
+    text-align: center;
+    font-family: Glacial;
+    font-size: 130%;
+    padding: 10px;
+}
+
+option {
+    font-family: Glacial;
+}
+
 /* Footer CSS */
 
-.footerbg{
-    background-color: seagreen;
-    width: 100%;
+div#footerbg {
+    background-color: var(--green-light);
     height: 170px;
     position: relative;
-    top: 200px;
 }
-.contact {
-    color: white;
-    font-family: Glacial;
-    font-size: 2vw;
+div#contact {
+    color: var(--text-color);
+    width: 20vw;
+    text-align: center;
+    background-color: var(--normal-gray);
+    border-radius: 5px;
+    margin: 5vw;
 }
 .copyright {
     color: white;
