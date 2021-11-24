@@ -10,10 +10,29 @@
         <title>Leaderboard</title>
     </head>
     <body>
-        <div>
+        <div id="column">
+            <div id="leaderboard">
+                <div id="placeholder-lb">
+                    <div id="kill-scores">
 
+                    </div>
+                    <div id="your-score">
+                        <div id="buttons-lb">
+                            <a id="lb-button" class="daily-button"><p>Daily</p></a>
+                            <a id="lb-button" class="monthly-button"><p>Monthly</p></a>
+                            <a id="lb-button" class="alltime-button"><p>All-Time</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="leaderboard">
+                
+            </div>
+            <div id="leaderboard">
+                
+            </div>
         </div>
-        <div>
+        <div id="difficulty-selector">
             <form action="">
                 <select name="difficulty" id="difficulty" placeholder="normal">
                     <option value="impossible">Impossible</option>
