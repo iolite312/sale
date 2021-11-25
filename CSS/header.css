@@ -1,5 +1,5 @@
 /* Header CSS */
-.logo {
+#logo {
     aspect-ratio: calc(32/15);
     max-width: 10vw;
 }
@@ -13,4 +13,11 @@
     font-family: Glacial;
     font-size: 130px;
     color: var(--text-color);
+    left: 20.5%;
+    position: relative;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: row;
 }
