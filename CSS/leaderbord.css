@@ -1,0 +1,117 @@
+/* Leaderboards Page CSS */
+
+#difficulty-selector {
+    margin: 4% 0;
+}
+
+select {
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 5px;
+    width: 10vw;
+    text-align: center;
+    font-family: Glacial;
+    font-size: 130%;
+    padding: 10px;
+}
+
+option {
+    font-family: Glacial;
+}
+
+#column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+}
+
+#leaderboard {
+    height: 50vw;
+    width: 23vw;
+    border-radius: 6px;
+    background-color: var(--light-gray);
+    margin: 0 5%
+}
+
+#placeholder-lb {
+    height: 47vw;
+    width: 23vw;
+    border-radius: 6px;
+    margin-top: 3vw;
+    background-color: var(--placeholder-black);
+}
+
+#your-score {
+    height: 7vw;
+    width: 23vw;
+    border-radius: 6px;
+    margin-top: 40vw;
+    position: absolute;
+    background-color: var(--normal-gray);
+}
+
+#buttons-lb {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 3vw;
+    width: 23vw;
+    margin-top: 4vw;
+}
+
+.daily-button {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: var(--green-light);
+    width: 8vw;
+    text-align: center;
+    font-size: 130%;
+    padding-top: 4%;
+    font-family: Glacial;
+    color: var(--text-color);
+}
+
+.monthly-button {
+    background-color: var(--green-light);
+    width: 7vw;
+    text-align: center;
+    font-size: 130%;
+    padding-top: 4%;
+    font-family: Glacial;
+    color: var(--text-color);
+}
+
+.alltime-button {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: var(--green-light);
+    width: 8vw;
+    text-align: center;
+    font-size: 130%;
+    padding-top: 4%;
+    font-family: Glacial;
+    color: var(--text-color);
+}
+
+a:hover {
+    background-color: var(--green-dark);
+    animation: lb-button 500ms ease 0s 1 normal forwards;
+}
+
+@keyframes lb-button {
+    0% {
+        background-color: var(--green-light);
+    }
+    100% {
+        background-color: var(--green-dark);
+    }
+}
+
+/* SCOREBOARD! */
+
+#kill-scores {
+    height: 40vw;
+    width: 23vw;
+    position: absolute;
+}

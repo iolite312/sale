@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="placeholder">
     <link rel="stylesheet" href="CSS/All.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="icon" href="./img/placeholderimg.jpg" type="image/png" sizes="32x32">
     <title>Goblin Tower Defence</title>
 </head>

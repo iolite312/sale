@@ -1,3 +1,16 @@
+/* Color Templates */
+
+:root {
+    --background: rgb(51,51,51);
+    --green-light: rgb(35,178,10);
+    --green-dark: rgb(36,103,33);
+    --light-gray: rgb(160,160,160);
+    --normal-gray: rgb(94,94,94);
+    --placeholder-black: rgb(0,0,0);
+    --text-color: rgb(255,255,255);
+    --text-color-contrast: rgb(0,0,0);
+}
+
 /* Global Values */
 
 * {
@@ -17,58 +30,9 @@
     font-family: Glacial;
 }
 
-/* Header CSS */
-
-.logo {
-    aspect-ratio: calc(32/15);
-    max-width: 10vw;
-}
-.leaderboard {
-    color: white;
-}
-.center2 {
-    position: relative;
-    left: 73%;
-}
-.text {
-    text-decoration: none;
-    color: white;
-}
-.center1 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.center-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 3vw 30vw 3vw 30vw;
-}
-
-/* Main CSS */
-
-.center {
-    position: relative;
-    left: 15vw;
-    top: 100px;
-    background-color: black;
-    aspect-ratio: calc(16/9);
-    max-width: 70vw;
-}
-.placeholder {
-    color: white;
-    font-family: Glacial;
-    font-size: 5vw;
-    text-align: center;
-    position: relative;
-    top: 1vw;
-}
 body {
     background-color: var(--background);
 }
-
 ::-webkit-scrollbar {
     width: 0rem;
 }
@@ -83,177 +47,4 @@ body {
 }
 ::-webkit-scrollbar-track{
     background-color: transparent;
-}
-
-/* Leaderboards Page CSS */
-
-#difficulty-selector {
-    margin: 4% 0;
-}
-
-select {
-    background-color: var(--light-gray);
-    border: none;
-    border-radius: 5px;
-    width: 10vw;
-    text-align: center;
-    font-family: Glacial;
-    font-size: 130%;
-    padding: 10px;
-}
-
-option {
-    font-family: Glacial;
-}
-
-#column {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 4%;
-}
-
-#leaderboard {
-    height: 50vw;
-    width: 23vw;
-    border-radius: 6px;
-    background-color: var(--light-gray);
-    margin: 0 5%
-}
-
-#placeholder-lb {
-    height: 47vw;
-    width: 23vw;
-    border-radius: 6px;
-    margin-top: 3vw;
-    background-color: var(--placeholder-black);
-}
-
-#your-score {
-    height: 7vw;
-    width: 23vw;
-    border-radius: 6px;
-    margin-top: 40vw;
-    position: absolute;
-    background-color: var(--normal-gray);
-}
-
-#buttons-lb {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    height: 3vw;
-    width: 23vw;
-    margin-top: 4vw;
-}
-
-.daily-button {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    background-color: var(--green-light);
-    width: 8vw;
-    text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
-    font-family: Glacial;
-    color: var(--text-color);
-}
-
-.monthly-button {
-    background-color: var(--green-light);
-    width: 7vw;
-    text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
-    font-family: Glacial;
-    color: var(--text-color);
-}
-
-.alltime-button {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background-color: var(--green-light);
-    width: 8vw;
-    text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
-    font-family: Glacial;
-    color: var(--text-color);
-}
-
-a:hover {
-    background-color: var(--green-dark);
-    animation: lb-button 500ms ease 0s 1 normal forwards;
-}
-
-@keyframes lb-button {
-    0% {
-        background-color: var(--green-light);
-    }
-    100% {
-        background-color: var(--green-dark);
-    }
-}
-
-/* SCOREBOARD! */
-
-#kill-scores {
-    height: 40vw;
-    width: 23vw;
-    position: absolute;
-}
-
-/* Footer CSS */
-
-div#footerbg {
-    background-color: var(--green-light);
-    height: 170px;
-    position: relative;
-}
-div#contact {
-    color: var(--text-color);
-    width: 20vw;
-    text-align: center;
-    background-color: var(--normal-gray);
-    border-radius: 5px;
-    margin: 10px;
-    height: 100px;
-    font-family: Glacial;
-}
-
-#center-items-footer {
-    display: block;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--background);
-    width: auto;
-    margin: 5% 10%;
-    border-radius: 6px;
-}
-
-#circle {
-    z-index: 1;
-    margin: 2% 5%;
-}
-
-#copyright {
-    display: block;
-    background-color: var(--background);
-    width: auto;
-    margin: 5% 10%;
-    border-radius: 6px;
-    height: 20px;
-}
-
-/* Color Templates */
-
-:root {
-    --background: rgb(51,51,51);
-    --green-light: rgb(35,178,10);
-    --green-dark: rgb(36,103,33);
-    --light-gray: rgb(160,160,160);
-    --normal-gray: rgb(94,94,94);
-    --placeholder-black: rgb(0,0,0);
-    --text-color: rgb(255,255,255);
-    --text-color-contrast: rgb(0,0,0);
 }

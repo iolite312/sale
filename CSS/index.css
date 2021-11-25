@@ -1,0 +1,18 @@
+/* Main CSS */
+
+.center {
+    position: relative;
+    left: 15vw;
+    top: 100px;
+    background-color: black;
+    aspect-ratio: calc(16/9);
+    max-width: 70vw;
+}
+.placeholder {
+    color: white;
+    font-family: Glacial;
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    top: 1vw;
+}
