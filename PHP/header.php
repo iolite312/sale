@@ -5,7 +5,7 @@
     <div class="center2">
         <div class="leaderboard font">
             <h2 style="text-align: center;">leaderboard</h2>
-            <p>Click <a class="text" href="leaderboards.php"> <u>here</u> </a> for detailed scoreboard</p>
+            <p>Click <a class="text" href="leaderboards.php" target="_blank"> <u>here</u> </a> for detailed scoreboard</p>
         </div>
         <div>
 
