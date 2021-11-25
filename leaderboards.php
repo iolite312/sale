@@ -13,6 +13,9 @@
         <title>Leaderboard</title>
     </head>
     <body>
+        <header>
+            <?php include "PHP/lb-header.php"; ?>
+        </header>
         <div id="column">
             <div id="leaderboard">
                 <div id="placeholder-lb">
