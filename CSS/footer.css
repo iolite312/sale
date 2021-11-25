@@ -1,9 +1,12 @@
 /* Footer CSS */
 
+footer {
+    margin-top: 10vw;
+}
+
 div#footerbg {
     background-color: var(--green-light);
     height: 170px;
-    position: relative;
 }
 div#contact {
     color: var(--text-color);
@@ -12,7 +15,7 @@ div#contact {
     background-color: var(--normal-gray);
     border-radius: 5px;
     margin: 10px;
-    height: 100px;
+    height: fit-content;
     font-family: Glacial;
 }
 
@@ -38,4 +41,11 @@ div#contact {
     margin: 5% 10%;
     border-radius: 6px;
     height: 20px;
+}
+
+#center-div {
+    display: flex;
+    top: 0px;
+    position: relative;
+    justify-content: center;
 }

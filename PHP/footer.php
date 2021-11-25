@@ -1,5 +1,5 @@
 <div id="footerbg">
-    <div class="center-items">
+    <div id="center-div">
         <div id="contact">
             <h2>Contact Us</h2>
                 <div id="center-items-footer">
