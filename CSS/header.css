@@ -22,11 +22,8 @@
 }
 
 .header-title {
-    font-family: Glacial;
-    font-size: 5vw;
     color: var(--text-color);
     text-align: center;
-    margin-top: 1vh;
 }
 
 .lb-link {
@@ -42,4 +39,29 @@
     color: var(--text-color);
     text-align: center;
     text-decoration: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .pos-l, .pos-r {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 13vw;
+        margin: 2vh 0;
+    }
+
+    header {
+        background: var(--background-dark);
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 601px) {
+    .header-title {
+        font-size: 5vw;
+        margin: 1vh 0;
+    }
 }

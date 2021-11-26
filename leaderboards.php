@@ -17,6 +17,16 @@
         <header>
             <?php include "PHP/lb-header.php"; ?>
         </header>
+        <div id="difficulty-selector-mobile">
+            <form action="">
+                <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                    <option value="impossible">Impossible</option>
+                </select>
+            </form>
+        </div>
         <div class="column">
             <!-- Leaderboards -->
             <div class="leaderboard shadow-l">
