@@ -1,23 +1,44 @@
 /* Header CSS */
+.header-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pos-l {
+    position: absolute;
+    left: 0;
+}
+
+.pos-r {
+    position: absolute;
+    right: 0;
+}
+
 #logo {
     aspect-ratio: calc(32/15);
     max-width: 10vw;
-}
-
-.link-dec {
-    /* text-decoration: none; */
-    color: var(--text-color);
+    border-radius: 6px;
 }
 
 .header-title {
     font-family: Glacial;
-    font-size: 130px;
+    font-size: 90px;
     color: var(--text-color);
-    left: 20.5%;
-    position: relative;
+    text-align: center;
+    margin-top: 5px;
 }
 
-.header-center {
-    display: flex;
-    flex-direction: row;
+.lb-link {
+    width: 10vw;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--green-light);
+    height: max-content;
+}
+
+.link-dec {
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
 }

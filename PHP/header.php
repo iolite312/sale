@@ -1,14 +1,12 @@
-<nav class="center-header">
-    <div>
-        <img id="logo" src="./img/placeholderimg.jpg" alt="placeholder">
+<nav class="header-center">
+    <div class="pos-l">
+        <img id="logo" src="./img/placeholderimg.jpg" alt="Website Logo">
     </div>
-    <div>
-        <h1 class="header-title"><?php echo "$title"; ?></h1>
-    </div>
-    <div class="center2">
-        <div class="leaderboard font">
-            <h2 style="text-align: center;">leaderboard</h2>
-            <p>Click <a class="link-dec" href="leaderboards.php" target="_blank">here</a> for detailed scoreboard</p>
-        </div>
+    <h1 class="header-title"><?php echo "$title"; ?></h1>
+    <div class="lb-link font pos-r">
+        <a class="link-dec font-w" href="leaderboards.php" target="_blank">
+            <h2>leaderboard</h2>
+            <p>Click here for a detailed scoreboard</p>
+        </a>
     </div>
 </nav>

@@ -17,13 +17,11 @@
     <header>
         <?php include 'PHP/header.php'; ?>
     </header>
-
     <main>
         <div class="center">
             <p class="placeholder">Game</p>
         </div>
     </main>
-
     <footer>
         <?php include 'PHP/footer.php'; ?>
     </footer>

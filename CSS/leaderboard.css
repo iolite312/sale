@@ -74,6 +74,7 @@ select {
 
 #kill-scores {
     font: var(--text-color) Glacial;
+    overflow: auto;
 }
 
 #your-score {
@@ -87,7 +88,6 @@ select {
 
 .scores-sizing {
     height: 5%;
-    width: 95%;
     border-radius: 6px;
     background-color: var(--normal-gray);
     font-family: Glacial;
