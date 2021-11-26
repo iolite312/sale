@@ -91,7 +91,6 @@ select {
     border-radius: 6px;
     background-color: var(--normal-gray);
     font-family: Glacial;
-    text-align: left;
 }
 
 .buttons-lb {
@@ -172,7 +171,3 @@ a:hover {
 }
 
 /* LEADERBOARD KILLS */
-
-#kills-1 {
-    
-}

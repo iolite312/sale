@@ -4,8 +4,8 @@
     max-width: 10vw;
 }
 
-.text {
-    text-decoration: none;
+.link-dec {
+    /* text-decoration: none; */
     color: var(--text-color);
 }
 
