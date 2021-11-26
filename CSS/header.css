@@ -18,23 +18,24 @@
 #logo {
     aspect-ratio: calc(32/15);
     max-width: 10vw;
-    border-radius: 6px;
+    border-radius: var(--b-radius);
 }
 
 .header-title {
     font-family: Glacial;
-    font-size: 90px;
+    font-size: 5vw;
     color: var(--text-color);
     text-align: center;
-    margin-top: 5px;
+    margin-top: 1vh;
 }
 
 .lb-link {
     width: 10vw;
-    padding: 6px;
-    border-radius: 6px;
+    padding: 1vmin;
+    border-radius: var(--b-radius);
     background-color: var(--green-light);
     height: max-content;
+    font-size: 1vw;
 }
 
 .link-dec {

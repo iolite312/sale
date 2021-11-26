@@ -3,7 +3,6 @@
 #difficulty-selector {
     margin: 4% 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -14,25 +13,28 @@ select {
     font-family: Glacial;
     border-radius: 5px;
     width: 30vw;
-    font-size: 170%;
+    font-size: 2vw;
     padding: 10px;
+}
+
+option:hover {
+    background: var(--green-light);
 }
 
 .lb-title {
     font-family: Glacial;
     color: var(--text-color);
     text-align: center;
-    font-size: 80px;
+    font-size: 3.5vw;
+    height: 10%;
 }
 
-.lb-title-2 {
-    font-size: 30px;
-}
-
-.score-center {
+.personal-center {
     font-family: Glacial;
     color: var(--text-color);
     text-align: center;
+    height: 50%;
+    font-size: 1vw;
 }
 
 .center-items {
@@ -42,47 +44,54 @@ select {
     padding: 3vw 30vw 3vw 30vw;
 }
 
-#personal-score-kill {
-    font-size: 20px;
+.scoreboard {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(168, 31, 31, 0.2);
+    overflow: auto;
 }
 
-#selector-dropdown{
-    text-align: center;
+.shadow-l {
+    box-shadow: 1.5vw 2vh var(--background-dark);
 }
 
-#column {
+.shadow-m {
+    box-shadow: 0vw 2vh var(--background-dark);
+}
+
+.shadow-r {
+    box-shadow: -1.5vw 2vh var(--background-dark);
+}
+
+.column {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 4%;
 }
 
-#leaderboard {
-    height: 50vw;
+.leaderboard {
+    height: 45vw;
     width: 23vw;
-    border-radius: 6px;
+    border-radius: var(--b-radius);
     background-color: var(--light-gray);
     margin: 0 5%
 }
 
-#placeholder-lb {
-    height: 47vw;
-    width: 23vw;
-    border-radius: 6px;
+.placeholder-lb {
+    height: 90%;
+    width: 100%;
+    border-radius: var(--b-radius);
     background-color: var(--placeholder-black);
+    top: 0;
+    position: relative;
 }
 
-#kill-scores {
-    font: var(--text-color) Glacial;
-    overflow: auto;
-}
-
-#your-score {
-    height: 7vw;
+.personal {
+    height: 20%;
     width: 23vw;
-    border-radius: 6px;
-    margin-top: 40vw;
-    position: absolute;
+    border-radius: var(--b-radius);
+    position: relative;
     background-color: var(--normal-gray);
 }
 
@@ -93,21 +102,21 @@ p.scores:nth-of-type(n+4) {
 }
 
 p.top:nth-of-type(1) {
-    background: gold;
+    background-image: linear-gradient(to right, gold , rgb(207, 179, 17));
     border: rgb(207, 179, 17) 4px solid;
-    font-size: 130%;
+    font-size: 1.3vw;
 }
 
 p.top:nth-of-type(2) {
-    background: silver;
+    background-image: linear-gradient(to right, silver , rgb(153, 153, 153));
     border: rgb(153, 153, 153) 4px solid;
-    font-size: 120%;
+    font-size: 1.25vw;
 }
 
 p.top:nth-of-type(3) {
-    background: darkorange;
+    background-image: linear-gradient(to right, darkorange , rgb(199, 116, 15));
     border: rgb(199, 116, 15) 4px solid;
-    font-size: 110%;
+    font-size: 1.2vw;
 }
 
 p.scores:nth-of-type(even) {
@@ -124,54 +133,45 @@ p.top {
 
 .scores, .top {
     height: 5%;
-    border-radius: 6px;
+    border-radius: var(--b-radius);
     font-family: Glacial;
     padding-left: 5px;
     display: flex;
     align-content: center;
+    font-size: 1.1vw;
 }
 
 .buttons-lb {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    height: 3vw;
-    width: 23vw;
-    margin-top: 1vw;
+    position: relative;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
 }
 
-.daily-button {
+.daily {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    background-color: var(--green-light);
-    width: 8vw;
-    text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
-    font-family: Glacial;
-    color: var(--text-color);
+    width: 33%;
 }
 
-.monthly-button {
-    background-color: var(--green-light);
-    width: 7vw;
-    text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
-    font-family: Glacial;
-    color: var(--text-color);
+.monthly {
+    width: 34%;
 }
 
-.alltime-button {
+.alltime {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    width: 33%;
+}
+
+.button {
     background-color: var(--green-light);
-    width: 8vw;
     text-align: center;
-    font-size: 130%;
-    padding-top: 4%;
     font-family: Glacial;
     color: var(--text-color);
+    font-size: 1.7vw;
 }
 
 a:hover {
@@ -187,25 +187,3 @@ a:hover {
         background-color: var(--green-dark);
     }
 }
-
-/* SCOREBOARD! */
-
-#kill-scores {
-    height: 40vw;
-    width: 23vw;
-    position: absolute;
-}
-
-#wave-scores {
-    height: 40vw;
-    width: 23vw;
-    position: absolute;
-}
-
-#score-scores {
-    height: 40vw;
-    width: 23vw;
-    position: absolute;
-}
-
-/* LEADERBOARD KILLS */

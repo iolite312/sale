@@ -17,74 +17,70 @@
         <header>
             <?php include "PHP/lb-header.php"; ?>
         </header>
-        <div id="column">
+        <div class="column">
             <!-- Leaderboards -->
-            <div id="leaderboard">
-                <!-- Kills Leaderboard -->
+            <div class="leaderboard shadow-l">
+                <!-- Kill Count Leaderboard -->
                 <h1 class="lb-title">Kills</h1>
-                <div id="placeholder-lb">
-                    <div id="kill-scores" class="scroll-lb">
+                <div class="placeholder-lb">
+                    <div class="scoreboard">
                         <!-- Scores Placeholder -->
-                        <p class="top">This fucking sucks ass</p>
-                        <p class="top">This fucking sucks ass</p>
-                        <p class="top">This fucking sucks ass</p>
-                        <p class="scores">This fucking sucks ass</p>
-                        <p class="scores">This fucking sucks ass</p>
-                        <p class="scores">This fucking sucks ass</p>
-                        <p class="scores">This fucking sucks ass</p>
+                        <?php include 'PHP/scores.php'; ?>
                     </div>
-                    <div id="your-score">
-                        <div class="score-center">
-                            <h2 class="lb-title-2">Your Score</h2>
-                            <!-- Your Score Placeholder -->
-                            <p id="personal-score-kill">placeholder text</p>
+                    <div class="personal">
+                        <div class="personal-center">
+                            <h2>Your Score</h2>
+                                <!-- Your Score Placeholder -->
+                            <p>placeholder text</p>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily-button"><p>Daily</p></a>
-                            <a id="lb-button" class="monthly-button"><p>Monthly</p></a>
-                            <a id="lb-button" class="alltime-button"><p>All-Time</p></a>
+                            <a id="lb-button" class="daily button">Daily</a>
+                            <a id="lb-button" class="monthly button">Monthly</a>
+                            <a id="lb-button" class="alltime button">All-Time</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="leaderboard">
+            <div class="leaderboard shadow-m">
                 <!-- Wave Count Leaderboard -->
                 <h1 class="lb-title">Waves</h1>
-                <div id="placeholder-lb">
-                    <div id="wave-scores">
+                <div class="placeholder-lb">
+                    <div class="scoreboard">
                         <!-- Scores Placeholder -->
+                        <?php include 'PHP/scores.php'; ?>
                     </div>
-                    <div id="your-score">
-                        <div class="score-center">
-                            <h2 class="lb-title-2">Your Score</h2>
-                            <!-- Your Score Placeholder -->
-                            <p id="personal-score-kill">placeholder text</p>
+                    <div class="personal">
+                        <div class="personal-center">
+                            <h2>Your Score</h2>
+                                <!-- Your Score Placeholder -->
+                            <p>placeholder text</p>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily-button"><p>Daily</p></a>
-                            <a id="lb-button" class="monthly-button"><p>Monthly</p></a>
-                            <a id="lb-button" class="alltime-button"><p>All-Time</p></a>
+                            <a id="lb-button" class="daily button">Daily</a>
+                            <a id="lb-button" class="monthly button">Monthly</a>
+                            <a id="lb-button" class="alltime button">All-Time</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="leaderboard">
-                <!-- Highscore Leaderboard -->
-                <h1 class="lb-title">Scores</h1>
-                <div id="placeholder-lb">
-                    <div id="score-scores">
+            <div class="leaderboard shadow-r">
+                <!-- Score Count Leaderboard -->
+                <h1 class="lb-title">Score</h1>
+                <div class="placeholder-lb">
+                    <div class="scoreboard">
                         <!-- Scores Placeholder -->
+                        <?php include 'PHP/scores.php'; ?>
                     </div>
-                    <div id="your-score">
-                        <div class="score-center">
-                            <h2 class="lb-title-2">Your Score</h2>
-                            <!-- Your Score Placeholder -->
-                            <p id="personal-score-kill">placeholder text</p>
+                    <div class="personal">
+                        <div class="personal-center">
+                            <h2>Your Score</h2>
+                                <!-- Your Score Placeholder -->
+                            <p>placeholder text</p>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily-button"><p>Daily</p></a>
-                            <a id="lb-button" class="monthly-button"><p>Monthly</p></a>
-                            <a id="lb-button" class="alltime-button"><p>All-Time</p></a>
+                            <a id="lb-button" class="daily button">Daily</a>
+                            <a id="lb-button" class="monthly button">Monthly</a>
+                            <a id="lb-button" class="alltime button">All-Time</a>
                         </div>
                     </div>
                 </div>

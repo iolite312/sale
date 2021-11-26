@@ -1,51 +1,43 @@
-/* Footer CSS */
-
 footer {
-    margin-top: 10vw;
-}
-
-div#footerbg {
-    background-color: var(--green-light);
-    height: 170px;
-}
-div#contact {
-    color: var(--text-color);
-    width: 20vw;
-    text-align: center;
-    background-color: var(--normal-gray);
-    border-radius: 5px;
-    margin: 10px;
-    height: fit-content;
-    font-family: Glacial;
-}
-
-#center-items-footer {
-    display: block;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--background);
-    width: auto;
-    margin: 5% 10%;
-    border-radius: 6px;
-}
-
-#circle {
-    z-index: 1;
-    margin: 2% 5%;
-}
-
-#copyright {
-    display: block;
-    background-color: var(--background);
-    width: auto;
-    margin: 5% 10%;
-    border-radius: 6px;
-    height: 20px;
-}
-
-#center-div {
     display: flex;
-    top: 0px;
-    position: relative;
+    flex-direction: row;
     justify-content: center;
+    background: var(--green-light);
+    text-align: center;
+    font-size: 1vw;
+    height: 16vh;
+    color: var(--text-color);
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--normal-gray);
+    border-radius: var(--b-radius);
+    width: 20vw;
+    height: 10vh;
+    margin: 3vh 3vw;
+}
+
+p.highlight {
+    background: var(--background);
+}
+
+.highlight {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border-radius: var(--b-radius);
+    padding: 1vh;
+    width: 15vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.space {
+    margin: 0 1vmin;
+    background: var(--background);
+    padding: 1vmin;
+    border-radius: 50%;
 }

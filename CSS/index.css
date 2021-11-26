@@ -1,9 +1,7 @@
-/* Main CSS */
-
 .center {
-    margin: 100px 15vw;
+    margin: 5vh 15vw;
     background-color: var(--placeholder-black);
-    border-radius: 6px;
+    border-radius: var(--b-radius);
     aspect-ratio: calc(16/9);
     max-width: 70vw;
 }
