@@ -23,84 +23,15 @@
                 <!-- Kills Leaderboard -->
                 <h1 class="lb-title">Kills</h1>
                 <div id="placeholder-lb">
-                    <div id="kill-scores">
+                    <div id="kill-scores" class="scroll-lb">
                         <!-- Scores Placeholder -->
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <!-- Overflow taste -->
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
-                        <div id="kills-1" class="scores-sizing">
-                            <p>This fucking sucks ass</p>
-                        </div>
+                        <p class="top">This fucking sucks ass</p>
+                        <p class="top">This fucking sucks ass</p>
+                        <p class="top">This fucking sucks ass</p>
+                        <p class="scores">This fucking sucks ass</p>
+                        <p class="scores">This fucking sucks ass</p>
+                        <p class="scores">This fucking sucks ass</p>
+                        <p class="scores">This fucking sucks ass</p>
                     </div>
                     <div id="your-score">
                         <div class="score-center">

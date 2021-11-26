@@ -86,11 +86,49 @@ select {
     background-color: var(--normal-gray);
 }
 
-.scores-sizing {
+/* Alternate colors */
+
+p.scores:nth-of-type(n+4) {
+    color: var(--text-color);
+}
+
+p.top:nth-of-type(1) {
+    background: gold;
+    border: rgb(207, 179, 17) 4px solid;
+    font-size: 130%;
+}
+
+p.top:nth-of-type(2) {
+    background: silver;
+    border: rgb(153, 153, 153) 4px solid;
+    font-size: 120%;
+}
+
+p.top:nth-of-type(3) {
+    background: darkorange;
+    border: rgb(199, 116, 15) 4px solid;
+    font-size: 110%;
+}
+
+p.scores:nth-of-type(even) {
+    background: var(--light-gray);
+}
+
+p.scores:nth-of-type(odd) {
+    background: var(--normal-gray);
+}
+
+p.top {
+    color: var(--text-color);
+}
+
+.scores, .top {
     height: 5%;
     border-radius: 6px;
-    background-color: var(--normal-gray);
     font-family: Glacial;
+    padding-left: 5px;
+    display: flex;
+    align-content: center;
 }
 
 .buttons-lb {
