@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background: var(--green-light);
     text-align: center;
@@ -30,14 +29,47 @@ p.highlight {
     align-self: center;
     border-radius: var(--b-radius);
     padding: 1vh;
-    width: 15vw;
+    width: 4vw;
     align-content: center;
     justify-content: center;
 }
 
 .space {
     margin: 0 1vmin;
+}
+
+.wide {
+    width: 15vw
+}
+
+.linky-px {
+    width: 3vw;
     background: var(--background);
     padding: 1vmin;
     border-radius: 50%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        background: var(--background-dark);
+        height: 50vh;
+        align-items: center;
+        font-size: 5vw;
+    }
+
+    .element {
+        width: 80vw;
+        background: var(--green-light);
+        height: 14vh;
+    }
+
+    .highlight {
+        width: 15vw;
+    }
+
+    .wide {
+        width: 60vw;
+    }
 }
