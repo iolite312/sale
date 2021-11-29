@@ -4,7 +4,7 @@ footer {
     background: var(--green-light);
     text-align: center;
     font-size: 1vw;
-    height: 16vh;
+    height: 21vh;
     color: var(--text-color);
 }
 
@@ -14,8 +14,8 @@ footer {
     justify-content: center;
     background: var(--normal-gray);
     border-radius: var(--b-radius);
-    width: 20vw;
-    height: 10vh;
+    width: 30vw;
+    height: 15vh;
     margin: 3vh 3vw;
 }
 
@@ -36,10 +36,11 @@ p.highlight {
 
 .space {
     margin: 0 1vmin;
+    border-radius: 50%;
 }
 
 .wide {
-    width: 15vw
+    width: 25vw
 }
 
 .linky-px {
