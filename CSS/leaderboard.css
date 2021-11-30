@@ -234,20 +234,35 @@ p.top {
 p.scores:hover, p.top:hover {
     animation-name: enlarge;
     animation-duration: 700ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: normal;
-    animation-direction:alternate;
-    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 
-p.scores:hover::before, p.top:hover::before {
-    animation-name: enlarge;
+/* p.scores:hover::after , p.top:hover::after {
+    animation-name: ensmall;
     animation-duration: 700ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: normal;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
+
+
+
+@keyframes ensmall {
+    0% {
+        height: 15%;
+        text-align: center;
+        font-size: 3vmin;
+    }
+
+    100% {
+        height: 5%;
+        border-radius: var(--b-radius);
+        padding-left: 5px;
+    }
+} */
 
 @keyframes enlarge {
     0% {
