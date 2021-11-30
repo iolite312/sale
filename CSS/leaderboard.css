@@ -209,25 +209,24 @@ p.top {
     color: var(--text-color);
 }
 
-.scores,
-.top {
+.scores, .top {
     height: 5%;
     border-radius: var(--b-radius);
     text-align: center;
-    font-size: 3vmin;
+    font-size: 2vmin;
     transition-property: height, font-size;
     transition-duration: 700ms;
     transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
 }
 
-p.scores:hover,
-p.top:hover {
+p.scores:hover, p.top:hover {
     height: 15%;
     border-radius: var(--b-radius);
     text-align: center;
     font-size: 4vmin;
     transition-property: height, font-size;
     transition-duration: 700ms;
+    transition-delay: 200ms;
     transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
 }
 
