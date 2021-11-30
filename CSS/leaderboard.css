@@ -193,7 +193,7 @@ p.top:nth-of-type(3) {
     border: rgb(199, 116, 15) 4px solid;
 }
 
-p.scores:nth-of-type(n+4) {
+p.scores:nth-of-type(n){
     color: var(--text-color);
 }
 

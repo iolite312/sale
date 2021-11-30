@@ -13,13 +13,20 @@
         <title>Leaderboard</title>
         <?php $title = "Leaderboard"; ?>
     </head>
+    <script>
+        function getDiff(val){
+            $.post('PHP/scores.php', {"Difficulty":val}, function(data){
+                alert('done')
+            })
+        }
+    </script>
     <body>
         <header>
             <?php include "PHP/lb-header.php"; ?>
         </header>
         <div id="difficulty-selector-mobile">
             <form action="">
-                <select name="difficulty" id="difficulty">
+                <select name="difficulty" id="difficulty" onChange="getDiff(this.value)">
                     <option value="easy">Easy</option>
                     <option value="normal">Normal</option>
                     <option value="hard">Hard</option>
@@ -98,11 +105,11 @@
         </div>
         <div id="difficulty-selector">
             <form action="">
-                <select name="difficulty" id="difficulty">
-                    <option value="easy">Easy</option>
-                    <option value="normal">Normal</option>
-                    <option value="hard">Hard</option>
-                    <option value="impossible">Impossible</option>
+                <select name="difficulty" id="difficulty" onChange="getDiff(this.value)">
+                    <option value="1">Easy</option>
+                    <option value="2">Normal</option>
+                    <option value="3">Hard</option>
+                    <option value="4">Impossible</option>
                 </select>
             </form>
         </div>
