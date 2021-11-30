@@ -47,7 +47,7 @@ p.highlight {
     width: 3vw;
     background: var(--background);
     padding: 1vmin;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 /* MOBILE */

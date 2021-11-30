@@ -1,6 +1,6 @@
 <nav class="header-center">
     <div class="pos-l">
-        <img id="logo" src="./img/placeholderimg.jpg" alt="Website Logo">
+        <img id="logo" src="./img/templogo.png" alt="Website Logo">
     </div>
     <h1 class="header-title"><?php echo "$title"; ?></h1>
     <div class="lb-link font pos-r">
