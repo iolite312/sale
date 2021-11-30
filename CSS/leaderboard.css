@@ -1,6 +1,7 @@
 /* Leaderboards Page CSS */
 
-#difficulty-selector, #difficulty-selector-mobile {
+#difficulty-selector,
+#difficulty-selector-mobile {
     margin: 4% 0;
     display: flex;
     justify-content: center;
@@ -48,118 +49,99 @@ option:hover {
 
 
 /* MOBILE */
+
 @media only screen and (max-width: 600px) {
     .column {
         flex-direction: column;
         margin: 10vh 3vw;
     }
-
     .leaderboard {
         width: 75vw;
         margin: 2vh 5%;
         height: 80vh;
     }
-
-    .shadow-l, .shadow-m, .shadow-r {
+    .shadow-l,
+    .shadow-m,
+    .shadow-r {
         box-shadow: none;
     }
-
     div#difficulty-selector {
         display: none;
     }
-    
-    .scores, .top {
+    .scores,
+    .top {
         font-size: 4vw;
     }
-
     p.top:nth-of-type(1) {
         font-size: 4.3vw;
     }
-    
     p.top:nth-of-type(2) {
         font-size: 4.25vw;
     }
-    
     p.top:nth-of-type(3) {
         font-size: 4.2vw;
     }
-
     .button {
         font-size: 4.7vw;
     }
-
     .personal-center {
         font-size: 4vw;
     }
-
     .lb-title {
         font-size: 11vw;
     }
-
     select {
         font-size: 6vw;
         width: 75vw;
     }
-    
 }
 
 
 /* DESKTOP */
+
 @media only screen and (min-width: 601px) {
     .column {
         flex-direction: row;
     }
-
     .leaderboard {
         width: 23vw;
         margin: 0 5%;
         height: 45vw;
     }
-
     .shadow-l {
         box-shadow: 1.5vw 2vh var(--background-dark);
     }
-    
     .shadow-m {
         box-shadow: 0vw 2vh var(--background-dark);
     }
-    
     .shadow-r {
         box-shadow: -1.5vw 2vh var(--background-dark);
     }
-
     div#difficulty-selector-mobile {
         display: none;
     }
-
-    .scores, .top {
+    .scores,
+    .top {
         font-size: 1.1vw;
     }
-
     p.top:nth-of-type(1) {
         font-size: 1.3vw;
     }
-    
     p.top:nth-of-type(2) {
         font-size: 1.25vw;
     }
-    
     p.top:nth-of-type(3) {
         font-size: 1.2vw;
     }
-
     .button {
         font-size: 1.7vw;
     }
-
     .personal-center {
         font-size: 1vw;
     }
-
     .lb-title {
         font-size: 3.5vw;
     }
-
     select {
         font-size: 2vw;
     }
@@ -193,19 +175,21 @@ option:hover {
     background-color: var(--normal-gray);
 }
 
+
 /* Alternate colors */
+
 p.top:nth-of-type(1) {
-    background-image: linear-gradient(to right, gold , rgb(207, 179, 17));
+    background-image: linear-gradient(to right, gold, rgb(207, 179, 17));
     border: rgb(207, 179, 17) 4px solid;
 }
 
 p.top:nth-of-type(2) {
-    background-image: linear-gradient(to right, rgb(183, 183, 196) , rgb(153, 153, 153));
+    background-image: linear-gradient(to right, rgb(183, 183, 196), rgb(153, 153, 153));
     border: rgb(153, 153, 153) 4px solid;
 }
 
 p.top:nth-of-type(3) {
-    background-image: linear-gradient(to right, darkorange , rgb(199, 116, 15));
+    background-image: linear-gradient(to right, darkorange, rgb(199, 116, 15));
     border: rgb(199, 116, 15) 4px solid;
 }
 
@@ -225,42 +209,26 @@ p.top {
     color: var(--text-color);
 }
 
-.scores, .top {
+.scores,
+.top {
     height: 5%;
     border-radius: var(--b-radius);
     text-align: center;
+    font-size: 3vmin;
+    transition-property: height, font-size;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
 }
 
-p.scores:hover, p.top:hover {
-    animation-name: enlarge;
-    animation-duration: 700ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: normal;
-    animation-direction:alternate;
-    animation-fill-mode: both;
-}
-
-p.scores:hover::before, p.top:hover::before {
-    animation-name: enlarge;
-    animation-duration: 700ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: normal;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
-}
-
-@keyframes enlarge {
-    0% {
-        height: 5%;
-        border-radius: var(--b-radius);
-        padding-left: 5px;
-    }
-
-    100% {
-        height: 15%;
-        text-align: center;
-        font-size: 3vmin;
-    }
+p.scores:hover,
+p.top:hover {
+    height: 15%;
+    border-radius: var(--b-radius);
+    text-align: center;
+    font-size: 4vmin;
+    transition-property: height, font-size;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
 }
 
 .buttons-lb {
@@ -294,7 +262,6 @@ p.scores:hover::before, p.top:hover::before {
     font-family: Glacial;
     color: var(--text-color);
 }
-
 
 a:hover {
     background-color: var(--green-dark);
