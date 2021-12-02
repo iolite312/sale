@@ -4,7 +4,7 @@
         <a class="space" href=""><img class="linky-px" src="img/discord.svg" alt="discord"></a>
         <a class="space" href=""><img class="linky-px" src="img/twitter.svg" alt="twitter"></a>
         <a class="space" href=""><img class="linky-px" src="img/email.svg" alt="email"></a>
-        <a class="space" href="https://github.com/superman312/sale"><img class="linky-px" src="img/github.svg" alt="github"></a>
+        <a class="space" href="https://github.com/superman312/sale" target="_blank"><img class="linky-px" src="img/github.svg" alt="github"></a>
     </div>
 </div>
 <div class="element">
