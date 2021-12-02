@@ -1,0 +1,32 @@
+body {
+    background: crimson;
+}
+
+.top {
+    width: 23vw;
+    height: 23vh;
+    background: yellow;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top:hover > .mini-score {
+    transform: translate(-1vw,50%);
+}
+
+/* .top:hover > .mini-score {
+    display: none;
+}
+
+.top:hover {
+    flex-direction: column;
+}
+
+.hidden-score {
+    display: none;
+}
+
+.top:hover > .hidden-score {
+    display: block;
+} */

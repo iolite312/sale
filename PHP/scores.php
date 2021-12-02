@@ -8,7 +8,7 @@ if(!$conn){
 	die("Connection Fails: ");
 }
 
-$sql = "SELECT Username from highscores WHERE Difficulty = '1'";
+$sql = "SELECT Username, Enemies_Killed from highscores WHERE Difficulty = '1'";
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {
@@ -16,9 +16,9 @@ if(mysqli_num_rows($result) > 0) {
 	$i = 0;
 	while($row = mysqli_fetch_assoc($result)){
 		if($i < 3){
-			echo "<p class='top'> Username: ", $row["Username"], "<br> </p>";
+			echo "<div class='top'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Enemies_Killed"], "</p><p class='hidden-score'>", $row["Enemies_Killed"], "</p></div>";
 		} else{
-			echo "<p class='scores'> Username: ", $row["Username"], "<br> </p>";
+			echo "<div class='scores'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Enemies_Killed"], "</p><p class='hidden-score'>", $row["Enemies_Killed"], "</p></div>";
 		}
 		$i++;
 	}
