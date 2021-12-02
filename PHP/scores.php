@@ -5,7 +5,7 @@ $password = '';
 $dbname = 'test';
 $conn = mysqli_connect($servername,$username, $password, $dbname);
 if(!$conn){
-	die("Connection Fails: " . mysqli_connect_error());
+	die("Connection Fails: ");
 }
 
 $sql = "SELECT Username from highscores WHERE Difficulty = '1'";
@@ -27,32 +27,3 @@ if(mysqli_num_rows($result) > 0) {
 }
 
 ?>
-<span></span>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
-<p class="scores">This fucking sucks ass</p>
