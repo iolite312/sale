@@ -42,7 +42,7 @@
                 <div class="placeholder-lb">
                     <div class="scoreboard">
                         <!-- Scores Placeholder -->
-                        <?php include 'PHP/scores.php'; ?>
+                        <?php include 'PHP/scoresKills.php'; ?>
                     </div>
                     <div class="personal">
                         <div class="personal-center">
@@ -64,7 +64,7 @@
                 <div class="placeholder-lb">
                     <div class="scoreboard">
                         <!-- Scores Placeholder -->
-                        <?php include 'PHP/scores.php'; ?>
+                        <?php include 'PHP/scoresWaves.php'; ?>
                     </div>
                     <div class="personal">
                         <div class="personal-center">
