@@ -16,9 +16,9 @@ if(mysqli_num_rows($result) > 0) {
 	$i = 0;
 	while($row = mysqli_fetch_assoc($result)){
 		if($i < 3){
-			echo "<div class='top'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Enemies_Killed"], "</p><p class='hidden-score'>", $row["Enemies_Killed"], "</p></div>";
+			echo "<div class='top'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Max_Wave"], "</p><p class='hidden-score'>", $row["Max_Wave"], "</p></div>";
 		} else{
-			echo "<div class='scores'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Enemies_Killed"], "</p><p class='hidden-score'>", $row["Enemies_Killed"], "</p></div>";
+			echo "<div class='scores'> <p>", $row["Username"], "</p><p class='mini-score'>", $row["Max_Wave"], "</p><p class='hidden-score'>", $row["Max_Wave"], "</p></div>";
 		}
 		$i++;
 	}
