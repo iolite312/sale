@@ -14,10 +14,20 @@
         <?php $title = "Leaderboard"; ?>
     </head>
     <script>
-        function getDiff(val){
-            $.post('PHP/scores.php', {"Difficulty":val}, function(data){
-                alert('done')
-            })
+        function getDiff(difficultySelect){
+            var val = difficultySelect.value
+            document.cookie = "difficulty = " + val;
+            location.reload()
+        }
+
+        window.onload = function() {
+            if(document.cookie == "" ||document.cookie === null){
+                return
+            }else{
+                difficulty = document.cookie;
+                difficulty = difficulty.slice(11);
+                document.getElementById("diff").value= parseInt(difficulty);
+            }
         }
     </script>
     <body>
@@ -105,7 +115,7 @@
         </div>
         <div id="difficulty-selector">
             <form action="">
-                <select name="difficulty" id="difficulty" onChange="getDiff(this.value)">
+                <select name="difficulty" id="diff" onChange="getDiff(this)">
                     <option value="1">Easy</option>
                     <option value="2">Normal</option>
                     <option value="3">Hard</option>

@@ -1,4 +1,10 @@
 <?php
+if(!isset($_COOKIE["difficulty"])){
+	$diff = 1;
+}else{
+	$diff = $_COOKIE["difficulty"];
+}
+
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -8,7 +14,7 @@ if(!$conn){
 	die("Connection Fails: ");
 }
 
-$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '1'";
+$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "'";
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {
