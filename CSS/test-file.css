@@ -1,18 +1,47 @@
 body {
     background: crimson;
+    margin: 0;
 }
 
 .top {
     width: 23vw;
-    height: 23vh;
+    height: 20vh;
     background: yellow;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+}
+
+.mini-score {
+    margin-right: 1vmin;
+    transition: transform 1500ms, margin-right, 1s;
 }
 
 .top:hover > .mini-score {
-    transform: translate(-1vw,50%);
+    transform: translate(-50%,20%);
+    margin-right: 0;
+}
+
+.mini-score,
+.username {
+    width: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.username {
+    margin-right: 1vmin;
+    transition: transform 1s;
+}
+
+.top:hover > .username {
+    transform: translateX(50%);
+}
+
+.top:hover > .username, .mini-score {
+    height: 10vh;
+    width: 100%;
 }
 
 /* .top:hover > .mini-score {

@@ -217,35 +217,16 @@ div.scores:nth-of-type(odd) {
     transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
 }
 
-.scores:hover > .hidden-score,
-.top:hover > .hidden-score {
-    display: block;
-}
-
-.scores:hover > .mini-score,
-.top:hover > .mini-score {
-    display: none;
-}
-
-.hidden-score {
-    display: none;
-    transition-property: display;
-    transition-delay: 200ms;
-}
-
-.hidden-score:hover {
-    display: block;
-}
 
 .scores:hover, .top:hover {
     height: 15%;
     border-radius: var(--b-radius);
     flex-direction: column;
     font-size: 4vmin;
-    transition-property: height, font-size;
+    /* transition-property: height, font-size;
     transition-duration: 700ms;
     transition-delay: 200ms;
-    transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71);
+    transition-timing-function: cubic-bezier(0.8, 0.5, 0.19, 0.71); */
 }
 
 .buttons-lb {
@@ -255,6 +236,38 @@ div.scores:nth-of-type(odd) {
     justify-content: center;
     height: 50%;
     width: 100%;
+}
+
+.mini-score {
+    text-align: center;
+    margin-right: 1vmin;
+    transition: transform 1500ms, margin-right, 1s;
+    transition-delay: 200ms;
+}
+
+.top:hover > .mini-score {
+    transform: translate(-50%,20%);
+}
+
+.mini-score,
+.username {
+    margin: 0 1vmin;
+    width: auto;
+}
+
+.username {
+    transition: transform 1s;
+    transition-delay: 200ms;
+}
+
+.top:hover > .username {
+    transform: translateX(25%);
+}
+
+.top:hover > .username, .mini-score {
+    height: 10vh;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 .daily {
