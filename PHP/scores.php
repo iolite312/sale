@@ -14,7 +14,7 @@ if(!$conn){
 	die("Connection Fails: ");
 }
 
-$sql = "SELECT Username, Score from highscores WHERE Difficulty = '" . $diff . "'";
+$sql = "SELECT Username, Score from highscores WHERE Difficulty = '" . $diff . "' ORDER BY Score DESC, Date ASC";
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {

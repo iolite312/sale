@@ -14,7 +14,7 @@ if(!$conn){
 	die("Connection Fails: ");
 }
 
-$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "'";
+$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' ORDER BY Max_Wave DESC, Date ASC";
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {
