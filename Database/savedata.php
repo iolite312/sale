@@ -3,7 +3,7 @@
     $servername = 'localhost';
     $username = 'root';
     $password = '';
-    $dbname = 'unityaccess';
+    $dbname = 'test';
     $con = mysqli_connect($servername,$username, $password, $dbname);
     //check that connection happend
     if(mysqli_connect_errno())
@@ -17,7 +17,7 @@
 
 
     //double check there is only one user with this name
-    $namecheckquery = "SELECT username FROM players WHERE username='" . $username . "';";
+    $namecheckquery = "SELECT User_Name FROM user_credentials WHERE User_Name='" . $username . "';";
 
     $namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check query failed"); //error code #2 - namecheckquery failed
     if (mysqli_num_rows($namecheck) != 1)

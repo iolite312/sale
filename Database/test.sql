@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 01 dec 2021 om 14:49
+-- Gegenereerd op: 03 dec 2021 om 10:08
 -- Serverversie: 10.4.21-MariaDB
 -- PHP-versie: 8.0.10
 
@@ -115,15 +115,16 @@ CREATE TABLE `save_data` (
 CREATE TABLE `user_credentials` (
   `UUID` int(11) NOT NULL,
   `User_Name` varchar(20) NOT NULL,
-  `Password` varchar(255) NOT NULL
+  `hash` varchar(100) NOT NULL,
+  `salt` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_credentials`
 --
 
-INSERT INTO `user_credentials` (`UUID`, `User_Name`, `Password`) VALUES
-(1, 'AbsoluteDragon', 'ExpressoDepresso');
+INSERT INTO `user_credentials` (`UUID`, `User_Name`, `hash`, `salt`) VALUES
+(1, 'AbsoluteDragon', '', '');
 
 --
 -- Indexen voor geëxporteerde tabellen
