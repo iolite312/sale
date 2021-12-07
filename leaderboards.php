@@ -58,7 +58,7 @@
                         <div class="personal-center">
                             <h2>Your Score</h2>
                                 <!-- Your Score Placeholder -->
-                            <p>placeholder text</p>
+                            <?php include 'PHP/personalScoreKills.php'; ?>
                         </div>
                         <div class="buttons-lb">
                             <a id="lb-button" class="daily button">Daily</a>
@@ -80,7 +80,7 @@
                         <div class="personal-center">
                             <h2>Your Score</h2>
                                 <!-- Your Score Placeholder -->
-                            <p>placeholder text</p>
+                            <?php include 'PHP/personalScoreWaves.php'; ?>
                         </div>
                         <div class="buttons-lb">
                             <a id="lb-button" class="daily button">Daily</a>
@@ -102,7 +102,7 @@
                         <div class="personal-center">
                             <h2>Your Score</h2>
                                 <!-- Your Score Placeholder -->
-                            <p>placeholder text</p>
+                            <?php include 'PHP/personalScore.php'; ?>
                         </div>
                         <div class="buttons-lb">
                             <a id="lb-button" class="daily button">Daily</a>
