@@ -28,6 +28,10 @@ if(mysqli_num_rows($result) > 0) {
 		}
 		$i++;
 	}
+	while($i <= 19){
+		echo "<div class='scores'><p></p></div>";
+		$i++;
+	}
 }else {
 	echo "0 results";
 }

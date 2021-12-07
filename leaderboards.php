@@ -20,12 +20,27 @@
             location.reload()
         }
 
+        function getCookie(cookie){
+            name = cookie + "=";
+            ca = document.cookie.split(';');
+            for (i=0; i < ca.length; i++){
+                c = ca[i];
+                while (c.charAt(0) == ' '){
+                    c = c.substring(1);
+                }
+                if(c.indexOf(name) == 0){
+                    return c.substring(name.length, c.length);
+                }else{
+                    return null;
+                }
+            }
+        }
+
         window.onload = function() {
-            if(document.cookie == "" ||document.cookie === null){
-                return
+            if(getCookie("difficulty") === null){
+                document.getElementById("diff").value= parseInt('1');
             }else{
-                difficulty = document.cookie;
-                difficulty = difficulty.slice(11);
+                difficulty = getCookie("difficulty");
                 document.getElementById("diff").value= parseInt(difficulty);
             }
         }
