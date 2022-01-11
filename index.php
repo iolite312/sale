@@ -18,10 +18,10 @@
     <header>
         <?php include 'PHP/header.php'; ?>
     </header>
-    <main>
+    <main class="test">
         <div class="center">
-        div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+        <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 style="margin-top:150px"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,10 +29,6 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">SALE</div>
       </div>
     </div>
     <script>
@@ -62,7 +58,7 @@
           setTimeout(function() {
             warningBanner.removeChild(div);
             updateBannerVisibility();
-          }, 5000);
+          }, 0.1);
         }
         updateBannerVisibility();
       }
@@ -94,8 +90,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "75vw";
+        canvas.style.height = "85vh";
       }
       loadingBar.style.display = "block";
 
@@ -106,9 +102,6 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
         }).catch((message) => {
           alert(message);
         });

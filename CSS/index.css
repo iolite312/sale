@@ -1,5 +1,5 @@
 .center {
-    margin: 5vh 15vw;
+    margin: 6vh 15vw;
     /* background-color: var(--placeholder-black);
     border-radius: var(--b-radius); */
     aspect-ratio: calc(16/9);
@@ -10,4 +10,8 @@
     font-family: Glacial;
     font-size: 5vw;
     text-align: center;
+}
+.test {
+    max-width: 32vw;
+    max-height: 18vh;
 }
