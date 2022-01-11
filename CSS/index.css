@@ -1,7 +1,7 @@
 .center {
     margin: 5vh 15vw;
-    background-color: var(--placeholder-black);
-    border-radius: var(--b-radius);
+    /* background-color: var(--placeholder-black);
+    border-radius: var(--b-radius); */
     aspect-ratio: calc(16/9);
     max-width: 70vw;
 }

@@ -26,7 +26,7 @@
         exit();
     }
 
-    $updatequery = "UPDATE players SET score = " . $newscore . " WHERE username = '" . $username . "';";
+    $updatequery = "UPDATE user_credentials SET score = " . $newscore . " WHERE User_Name = '" . $username . "';";
     mysqli_query($con, $updatequery) or die("7: Save query failed"); // error code #7 - Update query failed
 
     echo "0";

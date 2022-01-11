@@ -16,8 +16,7 @@
     $password = $_POST["password"];
 
     //check if name exists
-    $namecheckquery = "SELECT User_Name, salt, hash FROM user_credentials WHERE User_Name='" . $username . "';";
-   
+    $namecheckquery = "SELECT User_Name, salt, hash, score FROM user_credentials WHERE User_Name='" . $username . "';";   
     $namecheck = mysqli_query($con, $namecheckquery) or die("2: Name check query failed"); //error code #2 - namecheckquery failed
     if (mysqli_num_rows($namecheck) != 1)
     {
@@ -31,11 +30,11 @@
     $hash = $existinginfo["hash"];
 
     // echo "$username, $password\t";
-
+    
     $loginhash = crypt($password, $salt);
     if ($hash != $loginhash)
     {
-        echo "6: Incorrect password"; //error code #6 - password does not match hash
+        echo "\t6: Incorrect password"; //error code #6 - password does not match hash
         exit();
     }
 
