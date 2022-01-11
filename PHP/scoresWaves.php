@@ -26,15 +26,15 @@ if(!$conn){
 //this uses the timeFrame variable value to select the appropriate sql query
 switch($timeFrame){
 	case "day": 
-    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' AND Date = '" . Date('Y-m-d') . "' ORDER BY Score DESC, Date ASC";
+    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' AND Date = '" . Date('Y-m-d') . "' ORDER BY Max_Wave DESC, Date ASC";
     	break;
         
     case "month":
-    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' AND Date BETWEEN '" . Date('Y-m') . "-01" . "' AND '" . Date('Y-m-t') ."' ORDER BY Score DESC, Date ASC";
+    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' AND Date BETWEEN '" . Date('Y-m') . "-01" . "' AND '" . Date('Y-m-t') ."' ORDER BY Max_Wave DESC, Date ASC";
         break;
     
     case "all":
-    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' ORDER BY Score DESC, Date ASC";
+    	$sql = "SELECT Username, Max_Wave from highscores WHERE Difficulty = '" . $diff . "' ORDER BY Max_Wave DESC, Date ASC";
         break;
     				
 }
