@@ -14,20 +14,25 @@
         <?php $title = "Leaderboard"; ?>
     </head>
     <script>
+
+        //gets difficulty from the difficulty dropdown menu 
         function getDiff(difficultySelect){
             var val = difficultySelect.value
-            document.cookie = "difficulty = " + val;
+            document.cookie = "difficulty=" + val;
             location.reload()
         }
 
+        //gets the cookie that is asked for with the parameter needed in the function
         function getCookie(cookie){
             name = cookie + "=";
             ca = document.cookie.split(';');
             for (i=0; i < ca.length; i++){
                 c = ca[i];
+                //while there is a space in the string it will remove the space from the string
                 while (c.charAt(0) == ' '){
                     c = c.substring(1);
                 }
+                //if the specified cookie exists return the value of the cookie else return null
                 if(c.indexOf(name) == 0){
                     return c.substring(name.length, c.length);
                 }else{
@@ -36,6 +41,7 @@
             }
         }
 
+        //this sets the remembered difficulty value from the cookie into the dropdown menu
         window.onload = function() {
             if(getCookie("difficulty") === null){
                 document.getElementById("diff").value= parseInt('1');
@@ -43,6 +49,22 @@
                 difficulty = getCookie("difficulty");
                 document.getElementById("diff").value= parseInt(difficulty);
             }
+        }
+
+        //this sets the timeFrame cookie value for the specific scoreboard with value from the clicked button
+        function setTimeFrame(timeFrame, scoreboard){
+            switch(scoreboard){
+                case 'score':
+                    document.cookie = "timeFrameScores=" + timeFrame;
+                    break;
+                case 'waves':
+                    document.cookie = "timeFrameWaves=" + timeFrame;
+                    break;
+                case 'kills':
+                    document.cookie = "timeFrameKills=" + timeFrame;
+                    break;
+            }
+            location.reload();
         }
     </script>
     <body>
@@ -76,9 +98,9 @@
                             <?php include 'PHP/personalScoreKills.php'; ?>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily button">Daily</a>
-                            <a id="lb-button" class="monthly button">Monthly</a>
-                            <a id="lb-button" class="alltime button">All-Time</a>
+                            <a id="lb-button" class="daily button" onclick="setTimeFrame('day', 'kills')">Daily</a>
+                            <a id="lb-button" class="monthly button" onclick="setTimeFrame('month', 'kills')">Monthly</a>
+                            <a id="lb-button" class="alltime button" onclick="setTimeFrame('all', 'kills')">All-Time</a>
                         </div>
                     </div>
                 </div>
@@ -98,9 +120,9 @@
                             <?php include 'PHP/personalScoreWaves.php'; ?>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily button">Daily</a>
-                            <a id="lb-button" class="monthly button">Monthly</a>
-                            <a id="lb-button" class="alltime button">All-Time</a>
+                            <a id="lb-button" class="daily button" onclick="setTimeFrame('day', 'waves')">Daily</a>
+                            <a id="lb-button" class="monthly button" onclick="setTimeFrame('month', 'waves')">Monthly</a>
+                            <a id="lb-button" class="alltime button" onclick="setTimeFrame('all', 'waves')">All-Time</a>
                         </div>
                     </div>
                 </div>
@@ -120,9 +142,9 @@
                             <?php include 'PHP/personalScore.php'; ?>
                         </div>
                         <div class="buttons-lb">
-                            <a id="lb-button" class="daily button">Daily</a>
-                            <a id="lb-button" class="monthly button">Monthly</a>
-                            <a id="lb-button" class="alltime button">All-Time</a>
+                            <a id="lb-button" class="daily button" onclick="setTimeFrame('day', 'score')">Daily</a>
+                            <a id="lb-button" class="monthly button" onclick="setTimeFrame('month', 'score')">Monthly</a>
+                            <a id="lb-button" class="alltime button" onclick="setTimeFrame('all', 'score')">All-Time</a>
                         </div>
                     </div>
                 </div>

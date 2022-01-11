@@ -1,10 +1,11 @@
 <?php
+//checks if the difficulty cookie is set and if it is grabs the value of the cookie
 if(!isset($_COOKIE["difficulty"])){
 	$diff = 1;
 }else{
 	$diff = $_COOKIE["difficulty"];
 }
-
+//checks if the currentUser cookie is set and if it is grabs the value of the cookie
 if(!isset($_COOKIE["currentUser"])){
 	echo '<p>No user logged in.</p>';
 	return;
@@ -12,6 +13,7 @@ if(!isset($_COOKIE["currentUser"])){
 	$account = $_COOKIE["currentUser"];
 }
 
+//this creates the connection to the database when asked later in the file
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -25,7 +27,7 @@ $sql = "SELECT Username, score from highscores WHERE (Username, Difficulty) = ('
 $result = mysqli_query($conn, $sql);
 
 if(mysqli_num_rows($result) > 0) {
-	//output data from every row selected
+	//output data from every row selected and inserts it into the scoreboard container
 	$i = 0;
 	while($row = mysqli_fetch_assoc($result)){
 		echo "<p>" . $row["Username"] . ": " . $row["score"] . "</p>";
