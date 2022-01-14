@@ -6,6 +6,8 @@ footer {
     font-size: 1vw;
     height: 21vh;
     color: var(--text-color);
+    position: relative;
+    top: 650px;
 }
 
 .element {
