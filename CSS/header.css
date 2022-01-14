@@ -1,67 +1,67 @@
 /* Header CSS */
 .header-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .pos-l {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 
 .pos-r {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .logo {
-    aspect-ratio: calc(32/15);
-    max-width: 15vw;
-    border-radius: var(--b-radius);
+  aspect-ratio: calc(32 / 15);
+  max-width: 15vw;
+  border-radius: var(--b-radius);
 }
 
 .header-title {
-    color: var(--text-color);
-    text-align: center;
+  color: var(--text-color);
+  text-align: center;
 }
 
 .lb-link {
-    width: 10vw;
-    padding: 1vmin;
-    border-radius: var(--b-radius);
-    background-color: var(--green-light);
-    height: max-content;
-    font-size: 1vw;
+  width: 10vw;
+  padding: 1vmin;
+  border-radius: var(--b-radius);
+  background-color: var(--green-light);
+  height: max-content;
+  font-size: 1vw;
 }
 
 .link-dec {
-    color: var(--text-color);
-    text-align: center;
-    text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
 }
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
-    .pos-l, .pos-r {
-        display: none;
-    }
+  .pos-l,
+  .pos-r {
+    display: none;
+  }
 
-    .header-title {
-        font-size: 13vw;
-        margin: 2vh 0;
-    }
+  .header-title {
+    font-size: 13vw;
+    margin: 2vh 0;
+  }
 
-    header {
-        background: var(--background-dark);
-    }
-
+  header {
+    background: var(--background-dark);
+  }
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 601px) {
-    .header-title {
-        font-size: 5vw;
-        margin: 1vh 0;
-    }
+  .header-title {
+    font-size: 5vw;
+    margin: 1vh 0;
+  }
 }

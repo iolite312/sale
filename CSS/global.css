@@ -1,56 +1,56 @@
 /* Color Templates */
 
 :root {
-    --background: rgb(51,51,51);
-    --background-dark: rgb(29, 29, 29);
-    --green-light: rgb(35,178,10);
-    --green-dark: rgb(30, 143, 24);
-    --light-gray: rgb(160,160,160);
-    --normal-gray: rgb(94,94,94);
-    --placeholder-black: rgb(0,0,0);
-    --text-color: rgb(255,255,255);
-    --text-color-contrast: rgb(0,0,0);
-    --b-radius: 1vmin;
-    font-family: Glacial;
+  --background: rgb(51, 51, 51);
+  --background-dark: rgb(29, 29, 29);
+  --green-light: rgb(35, 178, 10);
+  --green-dark: rgb(30, 143, 24);
+  --light-gray: rgb(160, 160, 160);
+  --normal-gray: rgb(94, 94, 94);
+  --placeholder-black: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+  --text-color-contrast: rgb(0, 0, 0);
+  --b-radius: 1vmin;
+  font-family: Glacial;
 }
 /* Global Values */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 @font-face {
-    font-family: Glacial;
-    src: url(../Fonts/GlacialIndifference-Regular.otf);
+  font-family: Glacial;
+  src: url(../Fonts/GlacialIndifference-Regular.otf);
 }
 @font-face {
-    font-family: IBM;
-    src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
+  font-family: IBM;
+  src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
 }
 
 .font {
-    font-family: Glacial;
+  font-family: Glacial;
 }
 
 .font-w {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 ::-webkit-scrollbar {
-    width: 0rem;
+  width: 0rem;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.588);
+  background-color: rgba(0, 0, 0, 0.588);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: darkcyan;
+  background-color: darkcyan;
 }
 ::-webkit-scrollbar-thumb:active {
-    background-color: darkcyan;
+  background-color: darkcyan;
 }
-::-webkit-scrollbar-track{
-    background-color: transparent;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
