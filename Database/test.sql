@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 03 dec 2021 om 10:08
+-- Gegenereerd op: 14 jan 2022 om 10:42
 -- Serverversie: 10.4.21-MariaDB
 -- PHP-versie: 8.0.10
 
@@ -116,15 +116,23 @@ CREATE TABLE `user_credentials` (
   `UUID` int(11) NOT NULL,
   `User_Name` varchar(20) NOT NULL,
   `hash` varchar(100) NOT NULL,
-  `salt` varchar(25) NOT NULL
+  `salt` varchar(60) NOT NULL,
+  `score` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_credentials`
 --
 
-INSERT INTO `user_credentials` (`UUID`, `User_Name`, `hash`, `salt`) VALUES
-(1, 'AbsoluteDragon', '', '');
+INSERT INTO `user_credentials` (`UUID`, `User_Name`, `hash`, `salt`, `score`) VALUES
+(1, 'AbsoluteDragon', '', '', 0),
+(4, 'banaan46', '$5$rounds=5000$fuckbanaan46$QIgLjl9f4TIgnWF1eZCazea1lVEQZDpdSJ8bobdbqbD', '$5$rounds=5000$fuckbanaan', 0),
+(5, 'banaan45', '$5$rounds=5000$fuckbanaan45$txgwKsWcDfnNMvaPNtFdzhYGvJvPgC9Lr6tAsVHaZg0', '$5$rounds=5000$fuckbanaan', 0),
+(6, 'banaan12', '$5$rounds=5000$fuckbanaan12$FIbJgtGk516RZfq/lPf3wxX./THUmi1uepVC/ze/O18', '$5$rounds=5000$fuckbanaan12$', 0),
+(7, 'banaandoos', '$5$rounds=5000$fuckbanaandoos$RMy1L49XwoYHaNZ/gz2DIEuW/8VKCMjI6LVHWPObdK/', '$5$rounds=5000$fuckbanaandoos$', 6),
+(8, 'aapppppp', '$5$rounds=5000$fuckaapppppp$kdgEUVZwu7b/fuDGWvR8pb9wyl7cN0tekIuIy4RmOtA', '$5$rounds=5000$fuckaapppppp$', 15),
+(9, 'pietjepuk', '$5$rounds=5000$fuckpietjepuk$BWhTNVM0Wv4bnqxu4mkOl5hbl1WWBqm071O3odWgio2', '$5$rounds=5000$fuckpietjepuk$', 30),
+(10, 'banaan80', '$5$rounds=5000$fuckbanaan80$OqStvTdcql0WmREj0tbVxXKFFDnYuQOdn0DNNCGLm35', '$5$rounds=5000$fuckbanaan80$', 5);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -164,7 +172,7 @@ ALTER TABLE `highscores`
 -- AUTO_INCREMENT voor een tabel `user_credentials`
 --
 ALTER TABLE `user_credentials`
-  MODIFY `UUID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `UUID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
